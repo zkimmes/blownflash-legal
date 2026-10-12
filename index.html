@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blown Flash</title>
+<style>
+:root {
+  --ink: #16161a; --muted: #5c5c66; --bg: #ffffff;
+  --rule: #e4e4ea; --link: #1a5fb4; --accent: #0E0E10;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #e8e8ec; --muted: #a0a0ab; --bg: #0E0E10;
+    --rule: #2a2a2d; --link: #78aeed; --accent: #e8e8ec;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 3rem 1.25rem 6rem;
+  background: var(--bg); color: var(--ink);
+  font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+main { max-width: 42rem; margin: 0 auto; }
+h1 { font-size: 1.9rem; line-height: 1.2; letter-spacing: -0.02em; margin: 0 0 .25rem; }
+h2 { font-size: 1.15rem; margin: 2.5rem 0 .5rem; letter-spacing: -0.01em; }
+h2::after {
+  content: ""; display: block; height: 1px;
+  background: var(--rule); margin-top: .5rem;
+}
+p, li { color: var(--ink); }
+ul { padding-left: 1.25rem; }
+li { margin: .3rem 0; }
+a { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+code {
+  font: 0.875em/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+  background: color-mix(in srgb, var(--ink) 8%, transparent);
+  padding: .15em .35em; border-radius: 3px;
+}
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
+.subtitle { color: var(--muted); font-size: .9rem; margin: 0 0 2rem; }
+.back { display: inline-block; margin-bottom: 2rem; font-size: .9rem; }
+footer {
+  margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--rule);
+  color: var(--muted); font-size: .85rem;
+}
+.cards { list-style: none; padding: 0; margin: 2rem 0 0; }
+.cards li { margin: 0 0 .75rem; }
+.cards a { font-size: 1.05rem; font-weight: 600; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Blown Flash</h1><p class="subtitle">Photo and video editor for Android.</p><p>Editing runs on your device. Your photos and videos are never uploaded anywhere.</p><ul class="cards"><li><a href="privacy.html">Privacy Policy</a></li>
+<li><a href="terms.html">Terms of Service</a></li>
+<li><a href="delete-data.html">Delete your data</a></li></ul>
+<footer>Blown Flash · <a href="mailto:zigmasreisas@gmail.com">zigmasreisas@gmail.com</a></footer>
+</main>
+</body>
+</html>

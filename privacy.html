@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Blown Flash</title>
+<style>
+:root {
+  --ink: #16161a; --muted: #5c5c66; --bg: #ffffff;
+  --rule: #e4e4ea; --link: #1a5fb4; --accent: #0E0E10;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #e8e8ec; --muted: #a0a0ab; --bg: #0E0E10;
+    --rule: #2a2a2d; --link: #78aeed; --accent: #e8e8ec;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 3rem 1.25rem 6rem;
+  background: var(--bg); color: var(--ink);
+  font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+main { max-width: 42rem; margin: 0 auto; }
+h1 { font-size: 1.9rem; line-height: 1.2; letter-spacing: -0.02em; margin: 0 0 .25rem; }
+h2 { font-size: 1.15rem; margin: 2.5rem 0 .5rem; letter-spacing: -0.01em; }
+h2::after {
+  content: ""; display: block; height: 1px;
+  background: var(--rule); margin-top: .5rem;
+}
+p, li { color: var(--ink); }
+ul { padding-left: 1.25rem; }
+li { margin: .3rem 0; }
+a { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+code {
+  font: 0.875em/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+  background: color-mix(in srgb, var(--ink) 8%, transparent);
+  padding: .15em .35em; border-radius: 3px;
+}
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
+.subtitle { color: var(--muted); font-size: .9rem; margin: 0 0 2rem; }
+.back { display: inline-block; margin-bottom: 2rem; font-size: .9rem; }
+footer {
+  margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--rule);
+  color: var(--muted); font-size: .85rem;
+}
+.cards { list-style: none; padding: 0; margin: 2rem 0 0; }
+.cards li { margin: 0 0 .75rem; }
+.cards a { font-size: 1.05rem; font-weight: 600; }
+</style>
+</head>
+<body>
+<main>
+<a class="back" href="./">&larr; Blown Flash</a>
+<h1>Blown Flash — Privacy Policy</h1>
+<p class="subtitle"><strong>Last updated: 9 October 2026</strong></p>
+<p>Blown Flash is a photo and video editor. This policy explains exactly what the app does and does not do with your data. It is short because the app collects very little.</p>
+<h2>The short version</h2>
+<ul>
+<li><strong>Your photos and videos never leave your device.</strong> All editing runs on your phone's GPU.</li>
+<li>There is <strong>no account</strong>, no email address, no name, no sign-in.</li>
+<li>The app asks for <strong>no storage permission</strong> and cannot browse your library.</li>
+<li>What is sent off the device: an anonymous install id, and purchase confirmations handled by Google Play and RevenueCat.</li>
+</ul>
+<h2>Your photos and videos</h2>
+<p>Editing happens entirely on your device, in a local Vulkan compute engine. A photo or video you open is decoded into memory, processed by the GPU, and written back to your gallery. <strong>No image or video data is ever transmitted anywhere</strong>, to us or to anyone else. There is no cloud processing, no upload step, and no server-side rendering.</p>
+<p>The app does not request access to your photo library. You choose each file through the Android system photo picker, which hands the app that one file and nothing else. Exports are written through the system <code>MediaStore</code> to <code>Pictures/Blown Flash</code> and <code>Movies/Blown Flash</code>.</p>
+<h2>The anonymous device id</h2>
+<p>On first launch the app generates a random identifier (a UUID) and stores it on your device. It is <strong>not</strong> derived from your hardware, your advertising id, your Google account, or anything else that identifies you or your phone. It is a random number that exists so that two things can work:</p>
+<p>1. <strong>Your subscription survives a reinstall.</strong> The id is what a purchase is attached to. 2. <strong>Sync of your own edit history and remote presets</strong>, if those are enabled on your build.</p>
+<p>The id is sent to our backend and to RevenueCat. It cannot be traced back to you, and clearing the app's data regenerates it — which will also detach it from an active subscription until you tap <strong>Restore purchases</strong>.</p>
+<h2>Purchases</h2>
+<p>Subscriptions are sold through <strong>Google Play Billing</strong> and managed through <strong>RevenueCat</strong>, which verifies the purchase and tells our backend whether the subscription is active.</p>
+<p>We never see and never store your payment details. Your card number, billing address, and Google account are handled by Google and are not available to this app. What our backend stores is: the anonymous device id, which product was bought, and when the paid period ends.</p>
+<ul>
+<li>Google Play's privacy policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+<li>RevenueCat's privacy policy: <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a></li>
+</ul>
+<h2>On-device subject detection</h2>
+<p>The <strong>Sticker cutouts</strong> effect separates a subject from its background using Google ML Kit's subject segmentation, which runs <strong>on your device</strong> through Google Play Services. The image is not sent to Google to do this. Google Play Services may download the segmentation model itself the first time the feature is used; that download contains no data of yours.</p>
+<h2>What we do not do</h2>
+<ul>
+<li>No analytics or telemetry SDK.</li>
+<li>No advertising, no ad id, no ad network.</li>
+<li>No crash reporting that includes your content.</li>
+<li>No tracking across apps or websites.</li>
+<li><strong>We do not sell or share personal data</strong>, in the sense of GDPR, the CCPA, or any other framework. There is nothing to sell.</li>
+</ul>
+<h2>Diagnostics</h2>
+<p>The app shows your GPU model in <strong>Settings → About</strong> so that a bug report can say which driver it happened on. That text is displayed to you only; it is not collected.</p>
+<h2>Your rights</h2>
+<p>Because there is no account, there is nothing to log into and nothing for us to look up about you. Concretely:</p>
+<ul>
+<li><strong>Delete everything:</strong> clear the app's data, or uninstall it. That removes the device id, and with it the only key that links anything on our backend to your install.</li>
+<li><strong>Request deletion server-side:</strong> email the address below with your device id (visible in Settings) and the associated record will be deleted.</li>
+<li><strong>Access or export:</strong> the same address. The record is a handful of fields.</li>
+</ul>
+<p>Under GDPR the legal basis for processing the device id is <strong>performance of a contract</strong> — it is what makes a paid subscription work. There is no consent-based processing because there is no processing we could ask consent for.</p>
+<h2>Children</h2>
+<p>Blown Flash is not directed at children under 13 and collects no personal information from anyone, of any age.</p>
+<h2>Changes</h2>
+<p>If this policy changes, the date at the top changes with it, and material changes will be announced in the app's release notes.</p>
+<h2>Contact</h2>
+<p>zigmasreisas@gmail.com</p>
+<footer>Blown Flash · <a href="mailto:zigmasreisas@gmail.com">zigmasreisas@gmail.com</a></footer>
+</main>
+</body>
+</html>

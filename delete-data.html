@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delete your data — Blown Flash</title>
+<style>
+:root {
+  --ink: #16161a; --muted: #5c5c66; --bg: #ffffff;
+  --rule: #e4e4ea; --link: #1a5fb4; --accent: #0E0E10;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #e8e8ec; --muted: #a0a0ab; --bg: #0E0E10;
+    --rule: #2a2a2d; --link: #78aeed; --accent: #e8e8ec;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 3rem 1.25rem 6rem;
+  background: var(--bg); color: var(--ink);
+  font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+main { max-width: 42rem; margin: 0 auto; }
+h1 { font-size: 1.9rem; line-height: 1.2; letter-spacing: -0.02em; margin: 0 0 .25rem; }
+h2 { font-size: 1.15rem; margin: 2.5rem 0 .5rem; letter-spacing: -0.01em; }
+h2::after {
+  content: ""; display: block; height: 1px;
+  background: var(--rule); margin-top: .5rem;
+}
+p, li { color: var(--ink); }
+ul { padding-left: 1.25rem; }
+li { margin: .3rem 0; }
+a { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+code {
+  font: 0.875em/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+  background: color-mix(in srgb, var(--ink) 8%, transparent);
+  padding: .15em .35em; border-radius: 3px;
+}
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
+.subtitle { color: var(--muted); font-size: .9rem; margin: 0 0 2rem; }
+.back { display: inline-block; margin-bottom: 2rem; font-size: .9rem; }
+footer {
+  margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--rule);
+  color: var(--muted); font-size: .85rem;
+}
+.cards { list-style: none; padding: 0; margin: 2rem 0 0; }
+.cards li { margin: 0 0 .75rem; }
+.cards a { font-size: 1.05rem; font-weight: 600; }
+</style>
+</head>
+<body>
+<main>
+<a class="back" href="./">&larr; Blown Flash</a>
+<h1>Blown Flash — Delete your data</h1>
+<p class="subtitle"><strong>Last updated: 12 October 2026</strong></p>
+<p>This page explains how to delete the data Blown Flash holds for you, and what is deleted when you do.</p>
+<h2>The short version</h2>
+<p>Open <strong>Blown Flash → Settings → Delete my data</strong>, confirm, and everything the backend holds for your install is erased immediately. You do not need an account, an email, or our help — the button does the deletion itself.</p>
+<h2>What gets deleted</h2>
+<p>Deleting removes, at once and permanently:</p>
+<ul>
+<li>the anonymous install identifier your copy of the app was given,</li>
+<li>every edit you chose to save to the cloud, and</li>
+<li>the record that your install has a Premium subscription.</li>
+</ul>
+<p>Deletion takes effect immediately. There is no retention window, no soft-delete, and no backup copy that outlives it.</p>
+<h2>What is not deleted, and why</h2>
+<p><strong>Your photos and videos.</strong> We never had them. Editing runs entirely on your device and your media is never uploaded, so there is nothing of yours on our servers to delete. Exported files stay in your gallery until you remove them yourself.</p>
+<p><strong>Your subscription.</strong> Google Play is the seller, and deleting your data here does not cancel billing. Cancel in the Play Store under <em>Payments and subscriptions</em>. If you have an active subscription and delete your data, the subscription keeps running — reinstall and tap <strong>Restore purchases</strong> to get Premium back.</p>
+<p><strong>Our payment log.</strong> Google and our payment provider keep their own records of a purchase, which we cannot delete on your behalf and which tax law requires them to retain. Those records live with them, not with us.</p>
+<p><strong>Webhook delivery ids.</strong> We keep the bare identifier of each subscription event we have already processed. These carry no information about you — only that an event with a given id was handled — and they are what stops a repeated delivery from re-applying after you have erased everything.</p>
+<h2>If you have uninstalled the app</h2>
+<p>If the app is gone and you want the data erased, email &lt;zigmasreisas@gmail.com&gt; from any address and say so. You will not be asked for the install identifier, because you have no way to look it up once the app is removed — tell us roughly when you used the app and we will find and delete it. Expect a reply within 30 days.</p>
+<p>Reinstalling and using the in-app button is faster if you still can: a fresh install is given a new identifier, so delete from the old install first if that matters to you.</p>
+<h2>Contact</h2>
+<p>zigmasreisas@gmail.com</p>
+<footer>Blown Flash · <a href="mailto:zigmasreisas@gmail.com">zigmasreisas@gmail.com</a></footer>
+</main>
+</body>
+</html>
